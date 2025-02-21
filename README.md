@@ -1,1 +1,1 @@
-# gox-clips
+# GoX-CLIPs

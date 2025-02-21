@@ -1,9 +1,10 @@
+name: gox-clips
 services:
   app:
-    build: ./htmx-go-app
+    build: ./gox-clips
     ports:
       - "8080:8080"
     volumes:
-      - ./htmx-go-app:/app
+      - ./gox-clips:/app
     environment:
       - GO_ENV=production

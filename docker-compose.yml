@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./htmx-go-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./htmx-go-app:/app
+    environment:
+      - GO_ENV=production

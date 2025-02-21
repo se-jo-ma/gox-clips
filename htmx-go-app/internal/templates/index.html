@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go + HTMX</title>
+    <script src="/static/scripts/htmx.min.js"></script>
+    <link rel="stylesheet" href="/static/css/index-style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <h1>Welcome to Go + HTMX!</h1>
+
+    <button type="button" hx-get="/load-content" hx-target="#content" hx-swap="innerHTML">
+        Load Content
+    </button>
+
+    <div id="content"></div>
+</body>
+</html>

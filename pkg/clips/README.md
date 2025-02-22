@@ -1,0 +1,1 @@
+This is a Go wrapper for CLIPS. This work is based on the [clipsgo](https://github.com/mattsmi/clipsgo) project.

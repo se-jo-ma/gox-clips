@@ -1,2 +1,2 @@
-go mod tidy && go run cmd/api/main.go
+go mod tidy && go run main.go
 tail -f /dev/null

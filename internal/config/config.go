@@ -10,7 +10,7 @@ import (
 
 // Config holds application configurations.
 type Config struct {
-	AppPort    int    `yaml:"app_port"`
+	ServerPort int    `yaml:"server_port"`
 	DBHost     string `yaml:"db_host"`
 	DBPort     int    `yaml:"db_port"`
 	DBUser     string `yaml:"db_user"`
@@ -21,7 +21,8 @@ type Config struct {
 
 func LoadConfig() (*Config, error) {
 	env := getEnv("APP_ENV", "dev")
-	configFile := fmt.Sprintf("./config/environments/%s.yml", env)
+
+	configFile := fmt.Sprintf("/app/internal/config/environments/%s.yaml", env)
 
 	data, err := os.ReadFile(configFile)
 	if err != nil {
@@ -32,9 +33,6 @@ func LoadConfig() (*Config, error) {
 	if err := yaml.Unmarshal(data, &cfg); err != nil {
 		return nil, fmt.Errorf("error parsing YAML file: %w", err)
 	}
-
-	// Optionally validate the config or set defaults here
-
 	return &cfg, nil
 }
 

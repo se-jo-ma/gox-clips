@@ -2,7 +2,7 @@ package handlers
 
 import (
     "encoding/json"
-    "htmx-go-app/internal/services"
+    "github.com/se-jo-ma/gox-clips/gox-clips/internal/services"
     "net/http"
 )
 

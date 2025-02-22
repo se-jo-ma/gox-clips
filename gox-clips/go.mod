@@ -1,4 +1,4 @@
-module htmx-go-app
+module github.com/se-jo-ma/gox-clips/gox-clips
 
 go 1.23.6
 

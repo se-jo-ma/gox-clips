@@ -1,7 +1,7 @@
 package services
 
 import (
-	"htmx-go-app/pkg/models"
+	"github.com/se-jo-ma/gox-clips/gox-clips/pkg/models"
 )
 
 type UserService struct{}

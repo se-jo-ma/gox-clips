@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"net/http"
-	"htmx-go-app/internal/services"
+	"github.com/se-jo-ma/gox-clips/gox-clips/internal/services"
 )
 type AuthHandler struct {
     Service services.AuthService

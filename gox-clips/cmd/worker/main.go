@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-    "htmx-go-app/internal/workers"
+    "github.com/se-jo-ma/gox-clips/gox-clips/internal/workers"
     "time"
 )
 

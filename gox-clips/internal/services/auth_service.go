@@ -1,7 +1,7 @@
 package services
 
 import (
-	"htmx-go-app/internal/auth"
+	"github.com/se-jo-ma/gox-clips/gox-clips/internal/auth"
 	"net/http"
 )
 

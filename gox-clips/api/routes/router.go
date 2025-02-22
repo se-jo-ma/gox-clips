@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"htmx-go-app/api/handlers"
-	"htmx-go-app/internal/services"
+	"github.com/se-jo-ma/gox-clips/gox-clips/api/handlers"
+	"github.com/se-jo-ma/gox-clips/gox-clips/internal/services"
 	"net/http"
 )
 
